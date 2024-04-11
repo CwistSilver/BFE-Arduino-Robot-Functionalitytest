@@ -13,7 +13,7 @@ void lookLeftRight()
 void setup()
 {
   arduinoSetup();
-  motorController.driveForward();
+  motorController.setDirection(motorController.FORWARD);
 }
 
 void loop()
@@ -21,7 +21,7 @@ void loop()
   if (finished)
     return;
   if (sensorController.getDistance() > 10)
-    motorController.update();
+    motorController.drive();
   else
   {
     motorController.stop();
