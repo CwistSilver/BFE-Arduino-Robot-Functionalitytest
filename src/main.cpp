@@ -1,4 +1,5 @@
 #include "BFEArduinoRobotFramework.h"
+#include <Arduino.h>
 
 bool finished = false;
 
