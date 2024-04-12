@@ -24,7 +24,7 @@ void loop()
     motorController.drive();
   else
   {
-    motorController.stop();
+    motorController.setDirection(motorController.NONE);
     lookLeftRight();
     motorController.rightTurn(180);
     finished = true;
